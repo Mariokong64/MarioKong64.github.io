@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* ==== Global ====*/
+
+body {
+  margin: 0;
+  width: auto;
+  /* height: 100vh; */
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+    url(/Images/code_background.webp);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section {
+  height: 100vh;
+}
+
+h1 {
+  margin-bottom: 3%;
+  text-align: center;
+  font-size: 6vmin;
+  color: #e3bd69;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 4vmin;
+  line-height: 1.2;
+  color: #d4d3d1;
+}
+
+/* ==== Navigation Menu ==== */
+.nav {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  color: #9fd45f;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  margin: 0 30px;
+}
+
+.nav-menu a{
+color: #c48b61;
+}
+
+.nav-menu a:hover{
+  background-color:#9fd45f;
+  color: white;
+  transition: ease-in .2s;
+  }
+
+.chunky {
+  display: block;
+  margin-top: 0.5vmax;
+  margin-left: 0.5vmax;
+  height: 2vmax;
+  width: auto;
+  border-radius: 75%;
+  opacity: 0.5;
+}
+
+/* ==== Principal Screen ==== */
+
+header {
+  display: flex;
+  width: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.photo {
+  display: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 22vmin;
+  border-radius: 50%;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.hi {
+  margin-bottom: 2vh;
+  font-size: 6vmin;
+  color: #e3bd69;
+}
+
+.header-content h1 {
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+  font-size: 5vmin;
+  color: #d4d3d1;
+}
+
+.line {
+  margin: auto;
+  margin-bottom: 2vh;
+  width: 40vw;
+  max-width: 95%;
+  height: 0.5vh;
+  border-radius: 5px;
+  background-color: #9fd45f;
+}
+
+.profession {
+  margin-top: 0;
+  margin-bottom: 10%;
+  font-size: 5vmin;
+  color: #c48b61;
+}
+
+.download {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  background: #178c27;
+  border-radius: 25px;
+}
+
+.buton-menu {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 17%;
+  height: auto;
+  cursor: pointer;
+}
+
+/* ===== About me ===== */
+.about-columns {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 72%;
+  display: grid;
+  grid-template-columns: 43% 55%;
+  gap: 2%;
+}
+
+.about-content {
+  text-align: justify;
+}
+
+.tokio {
+  margin: auto;
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 5%;
+  opacity: 0.8;
+  box-shadow: rgba(159, 212, 95, 0.07) 0px 1px 2px,
+    rgba(159, 212, 95, 0.07) 0px 2px 4px, rgba(159, 212, 95, 0.07) 0px 4px 8px,
+    rgba(159, 212, 95, 0.07) 0px 8px 16px,
+    rgba(159, 212, 95, 0.07) 0px 16px 32px,
+    rgba(159, 212, 95, 0.07) 0px 32px 64px;
+}
+
+/* ===== Working Tools ===== */
+.tools-columns {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 72%;
+  display: grid;
+  grid-template-columns: 55% 43%;
+  gap: 2%;
+}
+
+.tools-info {
+  text-align: justify;
+}
+
+.pc {
+  margin: auto;
+  display: block;
+  height: auto;
+  width: 100%;
+  border-radius: 5%;
+  opacity: 0.8;
+  box-shadow: rgba(159, 212, 95, 0.07) 0px 1px 2px,
+    rgba(159, 212, 95, 0.07) 0px 2px 4px, rgba(159, 212, 95, 0.07) 0px 4px 8px,
+    rgba(159, 212, 95, 0.07) 0px 8px 16px,
+    rgba(159, 212, 95, 0.07) 0px 16px 32px,
+    rgba(159, 212, 95, 0.07) 0px 32px 64px;
+}
+
+/* ===== Skills ===== */
+.my-skills {
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.rows {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  justify-items: center;
+  row-gap: 20%;
+}
+
+.skill {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skill #java {
+  margin-left: -25%;
+  width: 150%;
+}
+
+.skill #git-logo {
+  margin-bottom: 12%;
+}
+
+h4 {
+  text-align: center;
+  color: #d4d3d1;
+  font-size: 3vmin;
+}
+
+/* ===== Contact ===== */
+.contact{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+form{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+  min-width: 50%;
+  height: 80%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  margin-left: 2%;
+  margin-bottom: 2%;
+  font-size: 3vmin;
+ color: #d4d3d1;
+}
+
+form input, form textarea{
+border: 0;
+margin: 2%;
+padding: 2%;
+outline: none;
+background-color:#080808;
+color: grey;
+}
+
+
+#submit{
+  margin: auto;
+  width: 30%;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 25px;
+  display: inline-block;
+  color: #d4d3d1;
+  font-weight: bold;
+  background: #178c27;
+  cursor: pointer;
+}
+
+::placeholder{
+  color: #d4d3d1;
+}
+
+form input, form textarea, #submit{
+  box-shadow: rgba(159, 212, 95, 0.07) 0px 1px 2px,
+  rgba(159, 212, 95, 0.07) 0px 2px 4px, rgba(159, 212, 95, 0.07) 0px 4px 8px,
+  rgba(159, 212, 95, 0.07) 0px 8px 16px,
+  rgba(159, 212, 95, 0.07) 0px 16px 32px,
+  rgba(159, 212, 95, 0.07) 0px 32px 64px;
+}
+
+/* Mobile responsive */
+@media only screen and (max-width: 930px) {
+  /* ===== Principal screen RESPONSIVE ===== */
+  .nav {
+    padding: 0;
+  }
+
+  .chunky {
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    width: 8%;
+    height: auto;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    margin-top: -900px;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #0c1602;
+    transition: all 0.5s ease;
+  }
+
+  .mobile-menu {
+    margin-top: 0px;
+  }
+
+  .nav-menu li {
+    margin: 30px;
+  }
+
+  .buton-menu {
+    display: block;
+  }
+
+  section {
+    height: auto;
+  }
+  /* ===== About me RESPONSIVE ===== */
+  .about-columns {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+
+   /* ===== Working tools RESPONSIVE ===== */
+  .tools-columns {
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .rows{
+    margin-bottom: 15%;
+  }
+
+  form{
+    width: 90%;
+  }
+}

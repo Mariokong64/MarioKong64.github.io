@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/normalize.css">
+  <link rel="stylesheet" href="/CSS/styles.css">
+  <title>Mario's Portfolio</title>
+</head>
+
+<body>
+  <!-- Menu -->
+  <nav class="nav">
+    <img src="/Images/Chunky.svg" alt="Logo" class="chunky">
+    <ul class="nav-menu">
+      <li><a href="#aboutsection">About me</a></li>
+      <li><a href="#skillsection">My Skills</a></li>
+      <li><a href="#projectsection">Projects</a></li>
+      <li><a href="#contactsection">Contact</a></li>
+    </ul>
+    <img src="/Images/menu_icon.png" class="buton-menu" />
+  </nav>
+
+  <header>
+    <div class="header-content">
+      <img src="/Images/Foto_sin_fondo.png" alt="Mario's Photo" class="photo">
+      <h2 class="hi">Hi, I am</h2>
+      <h1>Mario Alberto López García</h1>
+      <div class="line"></div>
+      <h2 class="profession">Software Developer</h2>
+      <a href="MarioLopez_CV.pdf" class="download" target="_blank">Download CV</a>
+    </div>
+  </header>
+
+  <!-- ===== About me ===== -->
+  <Section id="aboutsection">
+    <div class="about-columns">
+      <div  class="about-content">
+        <h1 id="aboutme">About me</h1>
+        <p>
+          I have a law degree from the "Universidad Autónoma de Querétaro", and i am currently studying software
+          development
+          engineering at the "Universidad Abierta y a Distancia de México".
+        </p>
+        <div class="line"></div>
+        <p>
+          I live in the city of Queretaro. My main hobby is video games. I am a calm person and i consider that i have
+          good soft skills. I'm pragmatic, a self-taught person and i'm always willing to help. I focus on solutions and
+          results, so is very
+          easy to work with me.
+        </p>
+      </div>
+      <img src="/Images/Akibahara.webp" alt="Mario in Tokio" class="tokio">
+    </div>
+  </Section>
+
+  <!-- ===== Working Tools ===== -->
+  <section>
+    <div class="tools-columns">
+      <img src="/Images/tools.webp" alt="Working Tools image" class="pc">
+      <div class="tools-info">
+        <h1>My working tools</h1>
+        <p>
+          This is my workspace, which has all the necessary features to work with any of the most used software
+          nowadays.
+        </p>
+        <div class="line"></div>
+        <p>
+          I am passionate about everything related to software and hardware, so i built my own computer using the
+          necessary components to meet my personal and work needs
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills ===== -->
+  <section id="skillsection">
+    <div class="title">
+      <h1 class="my-skills">My Skills</h1>
+    </div>
+    <div class="rows">
+      <div class="skill">
+        <img src="/Images/html.png" alt="HTML logo" class="logo">
+        <h4>HTML</h4>
+      </div>
+      <div class="skill">
+        <img src="/Images/css.png" alt="CSS logo" class="logo">
+        <h4>CSS</h4>
+      </div>
+      <div class="skill">
+        <img src="/Images/javascript.png" alt="JavaScript logo" class="logo">
+        <h4>JavaScript</h4>
+      </div>
+      <div class="skill">
+        <img src="/Images/c++ sin fondo.png" alt="C++ logo" class="logo">
+        <h4>C++</h4>
+      </div>
+      <div class="skill">
+        <img src="/Images/java.png" alt="Java logo" class="logo" id="java">
+        <h4>Java</h4>
+      </div>
+      <div class="skill">
+        <img src="/Images/GitHub.png" alt="GitHub logo" class="logo" id="git-logo">
+        <h4>GitHub</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Personal Projects -->
+<section id="projectsection">
+  <div class="title">
+    <h1 class="my-skills">My Personal Projects</h1>
+  </div>
+</section>
+
+  <!-- ===== Contact ===== -->
+  <section id="contactsection">
+    <div class="contact">
+      <div class="title">
+        <h1>Contact</h1>
+      </div>
+      <form id="form" class="form" action="https://formsubmit.co/580ab7f5cbd66ede522429eba82f432f" method="POST" / >
+        <h3>Send me a message!</h3>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+        <input type="text" id="phone" name="phone" placeholder="Your phone (optional)">
+        <textarea id="message" name="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+        <button type="submit" id="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const butonMenu = document.querySelector('.buton-menu')
+    const navMenu = document.querySelector('.nav-menu')
+    butonMenu.addEventListener('click', () => {
+      navMenu.classList.toggle('mobile-menu')
+    })
+
+  </script>
+
+</body>
+
+</html>
