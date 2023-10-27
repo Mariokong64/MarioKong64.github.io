@@ -58,7 +58,7 @@ if (isset($_POST["submit"])) {
             // Redirigir después de mostrar la alerta
             echo "<script>
                 setTimeout(function() {
-                    window.location.href = 'http://localhost:8012/CURRICULUM_WEB/';
+                    window.location.href = 'https://mariokong64.github.io/';
                 }, 1600); // Esperar 1.6 segundos antes de redirigir
             </script>";
         }else{
